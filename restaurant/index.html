@@ -197,37 +197,42 @@ Include fields for name, email, message, and a submit button-->
 <p>here you can order your food online</p>
 
 <div class="responsive-form">
-
- <form action="/action_page.php">
-   <label for="email">email :</label>
-   <input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-   <label for="number">number of commend:</label>
-   <input type="number" id="number" name="namber" placeholder="number : 1,2,3..">
-   <br>
-
-   <label for="country">commend:</label>
-   <select id="country" name="country">
-     <option value="Smoky BBQ Burger">Smoky BBQ Burger</option>
-     <option value="French Fries">French Fries</option>
-     <option value="Chicken Alfredo Pasta">Chicken Alfredo Pasta</option>
-     <option value="Classic Margherita Pizza">Classic Margherita Pizza</option>
-     <option value="Caesar Salad">Caesar Salad</option>
-     <option value="Chicken Alfredo Pasta">Chicken Alfredo Pasta</option>
-     <option value="Grilled Salmon">Grilled Salmon</option>
-     <option value="Beef Burger Deluxe">Beef Burger Deluxe</option>
-     <option value="Stuffed Mushrooms">Stuffed Mushrooms</option>
-    </select>
-    
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" placeholder="Write something.."></textarea>
-
-    <input type="submit" value="Submit">
- </form>
-
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+          <h4 class="mb-0">Contact Us</h4>
+        </div>
+        <div class="card-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject of your message">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </div>
 
-    </div>
 
     <!---Footer:
 Design a simple footer with copyright information and social media icons.
