@@ -92,3 +92,7 @@ nav ul a:hover{
   background-color:  #f2f2f2;
   padding: 20px;
 }
+
+footer div a{
+  list-style: none;
+}
